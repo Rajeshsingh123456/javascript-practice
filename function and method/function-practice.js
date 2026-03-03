@@ -1,6 +1,6 @@
 //from lets practice
 //q1create a function using the function keyword that takes a string as a argument return 
-//the no of vowels in the string let count=0(check kare btaye kitne vowel hai).
+//the no of vowels in the string let count=0(check kare or btaye kitne vowel hai).
 
 function vowel(str){
     let count=0;
@@ -15,7 +15,35 @@ function vowel(str){
 }
 vowel("rajesh")
 
+//forof loop se
+function v (str){
+    let count=0;
+    for(let value of str){
+       if(value==="a" || value==="e"||value==="o"||value==="u"|| value==="i"){
+           count++ //count++: Ye shortcut hai count = count + 1 ka. Ise aise hi use karein.
+        }
 
+    }
+  
+      console.log(`vowel in the string ${str} is ${count}`);
+}
+v("of vowelfunction ")
+
+
+
+//q2 same  with arrow function
+const arrowvowel=(str) =>{
+    let count=0;
+    for(let i=0; i<str.length; i++){
+        if(str[i]==="a" || str[i]==="e"||str[i]==="o"||str[i]==="u"|| str[i]==="i"){
+           count++ //count++: Ye shortcut hai count = count + 1 ka. Ise aise hi use karein.
+        }
+
+    }
+  
+      console.log(`vowel in the string ${str} is ${count}`);
+}
+arrowvowel("arrow function")
 
 
 
